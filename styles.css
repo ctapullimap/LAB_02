@@ -1,0 +1,101 @@
+/* Estilos globales */
+html {
+  scroll-behavior: smooth;
+}
+
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+/* Barra de Navegación */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px;
+  background-color: #007acc; /* Color azul para la barra */
+  color: white;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #005f99; /* Más oscuro al pasar el mouse */
+}
+
+/* Main */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px; /* Espacio para la barra fija */
+  padding: 20px;
+}
+
+/* Sections */
+section {
+  width: 80%;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  padding: 20px;
+  text-align: center;
+}
+
+section h2 {
+  color: #333;
+}
+
+section p {
+  font-size: 16px;
+  color: #555;
+}
+
+section a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007acc;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+section a:hover {
+  background-color: #005f99;
+  color: #e0f7ff;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    bottom: 0;
+    top: unset; /* Quitar posición superior */
+    padding: 10px 0;
+  }
+
+  nav a {
+    padding: 10px;
+  }
+}
